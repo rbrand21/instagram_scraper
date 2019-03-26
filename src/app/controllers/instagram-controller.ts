@@ -16,7 +16,7 @@ export class InstagramController {
             message: `Cannot find posts for ${handleName}`,
           });
         } else {
-          response.status(HttpStatus.NOT_FOUND).send(posts);
+          response.status(HttpStatus.OK).send(posts);
         }
       }
     );
